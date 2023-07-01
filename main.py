@@ -155,7 +155,7 @@ for i, (nome, grupo) in enumerate(agrupado):
     ax.tick_params(axis='x', rotation=45)
 
     # Formatar as datas no eixo x para exibir apenas o dia e o mês
-    ax.xaxis.set_major_formatter(plt.DateFormatter('%d/%m'))
+    # ax.xaxis.set_major_formatter(plt.DateFormatter('%d/%m'))
 
     # Ajustar a legenda do eixo x para melhor legibilidade
     ax.xaxis.set_tick_params(labelsize=8)
@@ -170,3 +170,6 @@ plt.tight_layout()
 
 # Exibir o gráfico
 plt.show()
+
+# Consertar as datas que estão no formato errado
+# Deixar o label do eixo X mais legível
